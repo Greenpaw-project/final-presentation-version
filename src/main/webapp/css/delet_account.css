@@ -1,0 +1,89 @@
+@charset "utf-8";
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.left {
+  /* border: 1px solid tomato; */
+  background: url("../images/pexels-sunsetoned-6605883.jpg") center no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+.right {
+  /* border: 1px solid tomato; */
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.note {
+  /* border: 1px solid palevioletred; */
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  color: #217e4b;
+  font-size: 18px;
+  font-weight: 600;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -160px;
+}
+.password {
+  /* border: 1px solid palevioletred; */
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.password p {
+  margin: 10px 0 5px;
+  text-align: center;
+  color: #217e4b;
+  font-weight: 400;
+}
+.password input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  line-height: 28px;
+  outline: none;
+}
+.password .sub_note{
+  /* border: 1px solid palevioletred; */
+  text-align: center;
+  color: tomato;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 40px;
+  line-height: 16px;
+  font-weight:500;
+}
+.password button {
+  margin-top: 40px;
+  width: 180px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  background: rgb(0, 0, 0, 0.8);
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 28px;
+  transition: all ease 0.5s;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.password button:hover {
+  background: #658361;
+}

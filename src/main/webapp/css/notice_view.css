@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*min-width 추가함*/
+:root {
+  /*color*/
+  --gray-light-color:#d4d4d4d4;
+  --black-color: #000000;
+  --green-color:#aed581;
+  --gray-dark-color:#616161;
+  --green-dark-color:#558b2f;
+
+ 
+  /*font*/
+  --font-large:20px;
+  --font-meium:18px;
+  --font-small:14px;
+  --font-micro:10px;
+}
+
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+ul {
+  list-style:none;
+}
+
+.main {
+  flex-direction: row;
+  width: 100%;
+  display:flex;
+  background-image: url('./../images/notice_background.png');
+  position:50%;
+  background-size: cover;
+  min-height:100vh;
+}
+
+/*메뉴바 넣을곳*/
+.main-menu {
+  flex-basis: 400px;
+   /* background-image: url('../images/normalboard_background.png'); */
+  background-size:cover;
+  background-position: 30%; 
+  min-width: 245px;
+}
+
+
+
+/*그림, 검색창, 게시판*/
+.main-body {
+    width: 80%;
+    position: relation;
+    display:flex;/*이걸 해야 안의 내용이 flex가능..*/
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+    padding:5%;
+    background-color: rgba( 255, 255, 255, 0.9 );
+    min-width: 920px;
+    
+}
+/*글 보기*/
+.view-title {
+  border-bottom:1px solid var(--gray-dark-color);
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:1em;
+}
+
+.view-title .sub_title {
+  font-size:18px;
+}
+
+
+.view-title h1 {
+  font-size:43px;
+  font-weight: bold;
+  color:black;
+  font-family: 'Nanum Myeongjo';
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+}
+
+.autor-info .by {
+  font-style: italic;
+}
+
+.autor-info .space {
+  margin: 0px 6px 0px 6px;
+}
+
+.content-info span {
+  margin:5px;
+}
+
+/*제목,정보부분 간격 고정*/
+.view-title > p,
+.view-title > h1,
+.view-title > div {
+	margin-top:3px;
+	margin-bottom: 5px;
+}
+
+.view-content {
+  margin:3% 5% 3% 5%;
+  min-height:70%;
+}
+.view-content p {
+    line-height:normal;
+}
+/*이미지 위아래 조절*/
+.view-content img {
+  padding:20px 0px 20px 0px;
+  display : block;
+  margin : 0 auto ;
+  width:50em;
+}
+/*작은 메뉴창*/
+.go-link {
+  /* border:1px solid black; */
+  width:10%;
+  height:150px;
+  top:28%;
+  right:20px;
+  /* background-color: #dcedc8; */
+  background-color: #d7ccc8;
+  border-radius: 10%;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition-property:background-color;
+  transition-duration: 0.4s;
+}
+
+.link-menu {
+  opacity: 0.8;
+}
+
+.link-menu li {
+  margin:15px;
+}
+
+.go-link:hover {
+  background-color: #bcaaa4;
+ 
+}
+
+.go-link li a:hover {
+  color:#bf360c;
+  cursor:pointer;
+}
+
+.go-link a:link,
+.go-link a:visited {
+	color:black;
+}
+
+
+
+
+

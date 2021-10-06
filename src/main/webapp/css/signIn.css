@@ -1,0 +1,154 @@
+@charset "utf-8";
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  /* border: 1px solid red; */
+  background: url("../images/pexels-klaudia-ekert-2383122.jpg") center no-repeat;
+  /* background: url("../images/pexels-dương-nhân-2817420.jpg") center no-repeat; */
+  background-size: cover;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  float: right;
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+.logo img {
+  width: 300px;
+  /* border: 1px solid red; */
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.logo p {
+  /* border: 1px solid red; */
+  font-size: 1.8rem;
+  color: #658361;
+  font-weight: 600;
+}
+.log_in_form {
+  /* border: 1px solid palevioletred; */
+  margin: 40px auto;
+  width: 300px;
+  text-align: center;
+}
+.log_in_form p {
+  margin: 10px 0 5px;
+  text-align: left;
+  color: #217e4b;
+  font-weight: 400;
+}
+.log_in_form input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  line-height: 28px;
+  outline: none;
+}
+.log_in_form button {
+  margin-top: 40px;
+  width: 180px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  background: rgb(0, 0, 0, 0.8);
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 28px;
+  transition: all ease 0.5s;
+  text-transform: uppercase;
+}
+.log_in_form button:hover {
+  background: #658361;
+}
+.divider {
+  height: 20px;
+  /* border: 1px solid red; */
+}
+
+.divider span {
+  display: inline-block;
+  color: #658361;
+  font-size: 16px;
+  position: relative;
+  /* border: 1px solid red; */
+}
+.divider span:before {
+  content: "";
+  width: 200px;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  right: 70px;
+  top: 10px;
+}
+.divider span:after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  left: 70px;
+  top: 10px;
+}
+.join {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  height: 40px;
+}
+.join #createAccount {
+  /* border: 1px solid blue; */
+  margin-left: 60px;
+  height: 30px;
+  display: inline-block;
+  text-decoration: underline;
+  line-height: 30px;
+  color: #658361;
+}
+.join #createAccount:hover {
+  color: #a5a4a4;
+}
+.join span {
+  /* border: 1px solid blue; */
+  padding: 0 5px 0 10px;
+  color: #658361;
+}
+.join #kakaoAccount {
+  /* border: 1px solid blue; */
+  height: 30px;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 30px;
+  width: 150px;
+  background: url("../images/kakao_login_medium_narrow.png") no-repeat center;
+  background-size: 90%;
+}
+/* forgot password? */
+.log_in_form .fp{
+	/* border: 1px solid blue; */
+	text-align: center;
+}
+.fp a{
+	/* border: 1px solid red; */
+	color: #658361;
+	text-decoration: underline;
+	font-size: 14px;
+}
+.fp a:hover{
+	  color: #a5a4a4;
+}

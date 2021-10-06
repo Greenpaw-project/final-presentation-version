@@ -1,0 +1,190 @@
+@charset "utf-8";
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background: url("../images/scott-webb-oRWRlTgBrPo-unsplash.jpg") center no-repeat;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.content_wrap {
+  width: 70vw;
+  /* border: 1px solid blue; */
+  position: absolute;
+  left: 55%;
+  transform: translate(-50%);
+  padding: 30px 0;
+}
+.center_wrap {
+  /* border: 1px solid purple; */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.album_wrap {
+  background: #e7e7e7e6;
+  /* border: 1px solid purple; */
+  width: 89%;
+  height: 100%;
+  float: left;
+  justify-content: space-around;
+  transition: all ease 0.4s;
+  position: relative;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.album_content {
+  margin: 1vw;
+  display: inline-block;
+  /* border: 1px solid black; */
+  width: 15vw;
+  height: 20vw;
+  padding: 10px;
+  background: #afb4a7a8;
+  border-radius: 5px;
+  transition: all ease 0.4s;
+}
+.album_content:hover {
+  background: rgba(163, 177, 141, 0.8);
+}
+.album_content:hover .a_text_box {
+  background: rgba(137, 150, 114, 0.8);
+  transition: all ease 0.4s;
+}
+
+.album_content a {
+  /* border: 1px solid blue; */
+  display: block;
+  width: 15vw;
+  height: 20vw;
+  position: absolute;
+}
+.a_photo {
+  width: 15vw;
+  height: 15vw;
+  /* border: 1px solid salmon; */
+  border-radius: 4px 4px 0 0;
+/*   background: url("../images/sample1.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.a_text_box {
+  width: 15vw;
+  height: 5vw;
+  /* border: 1px solid salmon; */
+  background: #939b87ce;
+  border-radius: 0 0 4px 4px;
+  font-weight: 500;
+  padding: 10px 12px;
+  box-sizing: border-box;
+}
+.a_text_box p {
+  /* color: #2f3b1c; */
+  font-size: 12px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #2f3b1c;
+  line-height: 16px;
+  /* border: 1px solid red; */
+}
+.a_text_box .a_wdate {
+  margin-top: 5%;
+}
+.a_text_box .a_title {
+  margin-top: 4%;
+}
+/* 페이징 */
+.paging {
+  /* border: 1px solid red; */
+  text-align: center;
+  line-height: 16px;
+  padding: 12px 0;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+.paging span a {
+  color: #2f3b1c;
+  font-weight: 500;
+  transition: all ease 0.2s;
+  display: inline-block;
+  /* border: 1px solid red; */
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.paging span a:hover {
+  color: #81ad35;
+  font-weight: 600;
+  border-radius: 50px;
+}
+.forward,
+.backward {
+  /* border: 1px solid indigo; */
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0 2px;
+}
+.numbers {
+  /* border: 1px solid indigo; */
+  font-size: 12px;
+  margin: 0 2px;
+}
+/* 우측 메뉴바 */
+.album_right {
+  /* border: 1px solid red; */
+  width: 10%;
+  height: 500px;
+  float: right;
+  position: absolute;
+  top: 5%;
+  right: 0;
+}
+.menu {
+  /* border: 1px solid slateblue; */
+  margin-top: 55px;
+  background: #e7e7e7e6;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all ease 0.4s;
+}
+.menu:hover {
+  background: #ffffff9f;
+}
+.menu_list {
+  margin-bottom: 7px;
+  /* border: 1px solid red; */
+}
+.menu a {
+  /* border: 1px solid orange; */
+  padding: 2px 11px 2px 7px;
+  display: inline-block;
+  color: #303030;
+  font-weight: 500;
+  transition: all ease 0.2s;
+}
+.menu a:hover {
+  color: #8d9e6f;
+}
+.menu_list a::before {
+  content: "-";
+  /* border: 1px solid red; */
+  margin: 2px 2px 0 2px;
+}
+.new {
+  margin-top: 15px;
+}
+.new a {
+  color: #166816e1;
+  font-weight: 500;
+}
+.new a::before {
+  content: "+";
+  /* border: 1px solid red; */
+  margin: 2px 2px 0 2px;
+}

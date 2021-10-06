@@ -1,0 +1,272 @@
+@charset "utf-8";
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background: url("../images/jazmin-quaynor-8ioenvmof-I-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.content_wrap {
+  width: 70vw;
+  /* border: 1px solid blue; */
+  position: absolute;
+  left: 55%;
+  transform: translate(-50%);
+  padding: 30px 0;
+}
+.center_wrap {
+  /* border: 1px solid purple; */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* ----/공통 영역 --- */
+
+/* album view page */
+.view_box_bg {
+  background: #f8f8f8e6;
+  /* border: 1px solid salmon; */
+  width: 89%;
+  height: 92vh;
+  float: left;
+  padding: 3vh 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.content_outer {
+  /* border: 1px solid red; */
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1vh 1vw;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 5%,
+    rgba(255, 255, 255, 0.5) 10%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 5px;
+  background: #fff;
+}
+
+.content_title {
+  /* border: 1px solid blueviolet; */
+  background: #ffffff93;
+  width: 100%;
+  height: 5vh;
+  /* margin-bottom: 5px; */
+  border-radius: 5px;
+  display: flex;
+}
+/*----------------*/
+.title_outer {
+  width: 80%;
+  /* border: 1px solid red; */
+  display: flex;
+  border-radius: 30px;
+  background-color: rgba(208, 214, 209, 0.247);
+}
+.type {
+  width: 20%;
+  display: flex;
+}
+.type_select {
+  /* border: 1px solid green; */
+  width: 50%;
+  text-align: center;
+  line-height: 5vh;
+  background: #d2e4d7;
+  padding-left: 20px;
+}
+.type_select:nth-child(1) {
+  border-radius: 30px 0 0 30px;
+  text-indent: -20px;
+}
+.type_select:nth-child(2) {
+  border-radius: 0 30px 30px 0;
+  text-indent: -40px;
+}
+.type_select label {
+  /* border: 1px solid green; */
+  line-height: 5vh;
+  margin-left: 2px;
+  font-size: 15px;
+}
+.type_select label:hover {
+  cursor: pointer;
+}
+
+/*----------------*/
+.title_input {
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 4vh;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  background-color: rgba(208, 214, 209, 0);
+  padding-left: 10px;
+  /* border: 1px solid slateblue; */
+}
+
+.other_info {
+  /* border: 1px solid red; */
+  width: 20%;
+  padding-right: 5px;
+  float: right;
+  top: 0;
+}
+.other_info li {
+  /* border: 1px solid green; */
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+  font-style: italic;
+  color: #303030c7;
+  line-height: 16px;
+}
+
+.viewer {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 83%;
+  overflow-y: hidden;
+  padding: 2vh;
+  box-sizing: border-box;
+}
+
+.btn_out {
+  height: 7%;
+  position: relative;
+  /* border: 1px solid green; */
+  padding: 0 30px;
+}
+.public {
+  /* border: 1px solid red; */
+  font-size: 13px;
+  color: rgb(255, 99, 71);
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  padding: 10px;
+  display: block;
+}
+.is_private {
+  /* border: 1px solid green; */
+  background: #7da789;
+  padding: 5px 10px 5px 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  border-radius: 5px;
+  font-weight: 400;
+  display: inline-block;
+  /* position: absolute; */
+  /* top: 20%; */
+  /* left: 1%; */
+}
+.is_private label {
+  padding-left: 3px;
+  transition: all ease 0.4s;
+}
+
+.is_private input:hover {
+  cursor: pointer;
+}
+.is_private label:hover {
+  cursor: pointer;
+}
+
+.btn_save {
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 35px;
+  background: #7da789;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all ease 0.4s;
+}
+.btn_save:hover {
+  background: #468048;
+  cursor: pointer;
+}
+/* 우측 메뉴바 */
+.album_right {
+  /* border: 1px solid red; */
+  width: 10%;
+  height: 500px;
+  float: right;
+  top: 5%;
+  right: 0;
+}
+.menu {
+  /* border: 1px solid slateblue; */
+  margin-top: 55px;
+  background: #ffffff88;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all ease 0.4s;
+}
+.menu:hover {
+  background: #ffffffe5;
+}
+.menu_list {
+  margin-bottom: 7px;
+  /* border: 1px solid red; */
+}
+.menu a {
+  /* border: 1px solid orange; */
+  padding: 2px 11px 2px 7px;
+  display: inline-block;
+  color: #303030;
+  font-weight: 500;
+  transition: all ease 0.2s;
+}
+.menu a:hover {
+  color: #8d9e6f;
+}
+.menu_list a::before {
+  content: "-";
+  /* border: 1px solid red; */
+  margin: 2px 2px 0 2px;
+}
+
+.new,
+.list {
+  margin-top: 15px;
+}
+.new a,
+.list a {
+  color: #166816e1;
+  font-weight: 500;
+}
+.list a::before {
+  content: "✔";
+  /* border: 1px solid red; */
+  margin: 2px 2px 0 2px;
+}
+.new a::before {
+  content: "+";
+  /* border: 1px solid red; */
+  margin: 2px 2px 0 2px;
+}
